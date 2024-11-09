@@ -26,6 +26,7 @@ function Banner({ offerRef, mainRef, scrollToSection, navigation }) {
           width="100%"
           height="100%"
           className="h-full w-full"
+          style={{ filter: "blur(5px)" }}
           allow="autoplay; fullscreen"
         ></iframe>
       </div>
@@ -40,7 +41,7 @@ function Banner({ offerRef, mainRef, scrollToSection, navigation }) {
               👋
             </span>
           </p>
-          <h1 className="mt-8 xl:text-5xl sm:text-3xl text-gray-950 tracking-tight leading-loose text-pretty">
+          <h1 className="mt-8 xl:text-5xl sm:text-3xl text-gray-950 tracking-tight text-pretty ">
             Jestem
             <span className="text-violet-700 font-semibold"> Szymon</span>. Web
             developer, który tworzy strony oraz programy wyróżniające się na tle

@@ -30,7 +30,7 @@ function WebsiteCard({ offerRef }) {
           >
             <video
               ref={videoRef}
-              src="src/assets/video/website_presentation.mp4"
+              src="../src/assets/video/website_presentation.mp4"
               className="w-full h-full object-cover"
               muted
               loop

@@ -63,14 +63,14 @@ function ProgramCard() {
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src="src/assets/images/Spreadsheet.png"
+                  src="../src/assets/images/Spreadsheet.png"
                   alt="First Image"
                   className="w-full h-full object-contain"
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src="src/assets/images/Program.png"
+                  src="../src/assets/images/Program.png"
                   alt="Second Image"
                   className="w-full h-full object-contain"
                 />
