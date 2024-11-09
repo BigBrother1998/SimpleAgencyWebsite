@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "swiper/swiper-bundle.min.css";
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30%,
+  50% {
+    transform: rotate(20deg);
+  }
+  20%,
+  40% {
+    transform: rotate(-20deg);
+  }
+}
+
+.animate-wave {
+  animation: wave 1.9s ease-in-out infinite;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+/* CSS for Spotlight Effect */
+.card {
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card slightly */
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Optional: Add a pseudo-element for glow effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px; /* Match the card's border radius */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1; /* Show glow on hover */
+}
