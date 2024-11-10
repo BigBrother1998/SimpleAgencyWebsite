@@ -27,6 +27,8 @@ function WebsiteCard({ offerRef }) {
             transition={{ duration: 0.3 }}
             onHoverStart={handleHoverStart}
             onHoverEnd={handleHoverEnd}
+            onTouchStart={handleHoverStart}
+            onTouchEnd={handleHoverEnd}
           >
             <video
               ref={videoRef}

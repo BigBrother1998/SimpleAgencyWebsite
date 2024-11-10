@@ -32,21 +32,23 @@ function Banner({ offerRef, mainRef, scrollToSection, navigation }) {
       </div>
 
       <Menu scrollToSection={scrollToSection} navigation={navigation} />
-
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-left px-6">
-        <div className="text-left max-w-7xl">
-          <p className="xl:text-6xl sm:text-4xl font-semibold text-balance tracking-tight text-gray-950">
-            Cześć
-            <span className="ml-2 inline-block animate-wave origin-bottom-right">
-              👋
-            </span>
+      <div className="absolute inset-0 flex items-center justify-center text-center px-4 sm:px-6">
+        <div className="max-w-2xl w-full flex flex-col items-center">
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold uppercase text-balance tracking-tight text-gray-950">
+            Web designer
           </p>
-          <h1 className="mt-8 xl:text-5xl sm:text-3xl text-gray-950 tracking-tight text-pretty ">
-            Jestem
-            <span className="text-violet-700 font-semibold"> Szymon</span>. Web
-            developer, który tworzy strony oraz programy wyróżniające się na tle
-            innych pod względem jakości i innowacyjności.
+
+          <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl text-gray-950 font-extrabold tracking-tight text-pretty">
+            Szymon Błasiak
           </h1>
+
+          <div className="max-w-md w-full">
+            <p className="mt-6 text-base sm:text-lg tracking-tight text-balance">
+              Jestem Web developerem, który tworzy strony oraz programy
+              wyróżniające się na tle innych pod względem jakości i
+              innowacyjności.
+            </p>
+          </div>
         </div>
       </div>
 
